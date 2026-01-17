@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Paradise Donut Company | Stay Glazed</title>
+  <style>
+    /* Beautifully Chaotic Styling */
+    body {
+      color: #ff00de; /* Neon Pink */
+      background-color: #ffda05; /* Bright Yellow */
+      background-image: radial-gradient(#ffffff 10%, transparent 10%);
+      background-size: 30px 30px; /* Polka dot chaos */
+      font-family: 'Comic Sans MS', "Chalkboard SE", cursive;
+      overflow-x: hidden;
+      text-align: center;
+    }
+    
+    .container {
+      padding: 50px;
+    }
+
+    h1 {
+      font-size: 600%;
+      text-shadow: 5px 5px 0px #0188cc, 10px 10px 0px #ff00de;
+      transform: rotate(-3deg);
+      margin-top: 20px;
+    }
+    
+    h2 {
+      font-size: 250%;
+      background: white;
+      display: inline-block;
+      padding: 10px 20px;
+      border: 5px dashed #ff00de;
+      transform: rotate(2deg);
+    }
+
+    /* The Donut Wizard */
+    .wizard-container {
+      position: relative;
+      height: 400px;
+      margin-top: -50px;
+    }
+
+    .wizard {
+      width: 350px;
+      animation: float 3s ease-in-out infinite;
+    }
+
+    /* The Pancake-Donut Sandwich */
+    .sandwich-box {
+      margin-top: 50px;
+      border: 10px solid #0188cc;
+      border-radius: 50%;
+      background: white;
+      padding: 40px;
+      display: inline-block;
+      animation: wobble 2s infinite;
+    }
+
+    .sandwich {
+      width: 300px;
+    }
+
+    /* Chaos Animations */
+    @keyframes float {
+      0%, 100% { transform: translateY(0) rotate(0deg); }
+      50% { transform: translateY(-30px) rotate(5deg); }
+    }
+
+    @keyframes wobble {
+      0% { transform: scale(1); }
+      50% { transform: scale(1.1) rotate(-2deg); }
+      100% { transform: scale(1); }
+    }
+
+    .sprinkles {
+      position: absolute;
+      font-size: 2rem;
+      animation: fall 5s linear infinite;
+    }
+
+    @keyframes fall {
+      to { transform: translateY(100vh) rotate(360deg); }
+    }
+  </style>
+</head>
+<body>
+  
+  <div class="container">
+    <h1>Paradise Donut Company</h1>
+    
+    <div class="wizard-container">
+      <img style="height: 400px;" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSuBSYyBi2szyYwjPUbVwP_0Zs1uz1CnPSFeQ&s" alt="Donut Wizard" class="wizard">
+      <h2>Behold... Donut Magic!</h2>
+    </div>
+
+    <div class="sandwich-box">
+      <p><strong>The "Pancake-Donut" Breakfast Sandwich</strong></p>
+      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS_A2wnKrJjZMePA--8pgCaBxWZBOkYGeGBVg&s" alt="Pancake Donut Sandwich" class="sandwich">
+      <p>Is it a pancake? Is it a donut? Yes.</p>
+    </div>
+
+    <p style="margin-top: 50px;">
+        <a href="#" style="color: blue; font-size: 20px;">Enter the Glaze Portal</a>
+    </p>
+  </div>
+
+  <div class="sprinkles" style="left: 10%; top: -50px;">🍩</div>
+  <div class="sprinkles" style="left: 30%; top: -150px; animation-delay: 1s;">✨</div>
+  <div class="sprinkles" style="left: 60%; top: -100px; animation-delay: 2s;">🍩</div>
+  <div class="sprinkles" style="left: 80%; top: -200px; animation-delay: 0.5s;">🥞</div>
+
+</body>
+</html>
